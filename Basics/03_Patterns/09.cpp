@@ -1,0 +1,34 @@
+#include <iostream> 
+
+using namespace std;
+
+int main() {
+    int n;
+    cin>>n;
+    for(int i=0;i<2*n;i++){
+        if(i<n){
+            for(int j=0;j<n-i;j++){
+                cout<<" ";
+            }
+
+            for(int j =0;j<=2*i;j++){
+                cout<<"*";
+            }
+
+            cout<<"\n";
+        }else{
+            cout<<" ";
+
+            for(int j=0;j<i-n;j++){
+                cout<<" ";
+            }
+
+            for(int j =0;j<=3*n-2*i+2;j++){
+                cout<<"*";
+            }
+            cout<<"\n";
+        }
+    }
+    
+    return 0;
+}
